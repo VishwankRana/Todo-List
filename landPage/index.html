@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List New</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Features Button Container -->
+    <div class="container">
+        <div class="featuresCon">
+            <h1>ToDo</h1>
+            <button class="addBtn" id="addBtnID">Add ToDo</button>
+            <button class="viewBtn">View ToDo</button>
+            <div class="viewDropdownContent">
+                <button class="viewDropdownItem" data-value="personelCat" id="personelCatBtn">Personel</button>
+                <button class="viewDropdownItem" data-value="WorkCat" id="workCatBtn">Work</button>
+            </div>
+            <button class="habitatBtn">Habitat</button>
+        </div>
+
+        <!-- Task Entry Section -->
+        <div class="newDiv">
+            <div class="newDivChild">
+            <div class="taskTitle" contenteditable="true"></div>
+            <div class="taskDescription" contenteditable="true"></div>
+            <br>
+        
+        <!-- Task Category Buttons -->
+            <div class="taskCategory">
+                <button class="personelBtn">Personal</button>
+                <button class="workBtn">Work</button>
+                <div class="dropdown">
+                <button class="priorityBtn">Priority</button> <!-- Task Priority Button -->
+                
+                <div class="dropdown-content">
+                    <button class="priorityOption" data-priority="Low">Low</button>
+                    <button class="priorityOption" data-priority="Medium">Medium</button>
+                    <button class="priorityOption" data-priority="High">High</button>
+                </div> 
+            </div>
+            
+            <br>
+
+        <!-- Save & Cancel Buttons -->
+            <div class="saveBtnCon">
+                <button class="cancelBtn">Cancel</button>
+                <button class="saveBtn">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
